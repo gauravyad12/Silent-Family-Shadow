@@ -1808,7 +1808,7 @@
         d = n(7),
         m = n.n(d),
         g = m.a.length > 1,
-        v = "".concat("/SilentFamilyShadow/").replace(/\/$/, ""),
+        v = "".concat("./").replace(/\/$/, ""),
         y = null,
         b = Object(a.default)();
 
@@ -2526,7 +2526,7 @@
 
     function Wt(t) {
         if (jt[t]) return jt[t].sound || (jt[t].sound = new Howl({
-            src: ["/SilentFamilyShadow/assets/audio/" + jt[t].url]
+            src: ["./assets/audio/" + jt[t].url]
         })), jt[t].sound
     }
 
@@ -25849,7 +25849,7 @@
                     opacity: 0
                 })), e.add(e.defaultMesh), e.defaultMesh.rotation.set(e.infos.r[0], e.infos.r[1], e.infos.r[2]), e.infos.video) {
                 var n = document.createElement("video");
-                n.src = "/SilentFamilyShadow/assets/videos/" + e.infos.video, n.muted = !0, n.loop = !0, n.load(), n.play();
+                n.src = "./assets/videos/" + e.infos.video, n.muted = !0, n.loop = !0, n.load(), n.play();
                 var i = new rc(n);
                 i.minFilter = 1006, i.magFilter = 1006, e.texture = i, n.addEventListener("loadeddata", e.onTextureReady)
             } else {
@@ -26122,7 +26122,7 @@
                     return t.mesh
                 })), e.interactiveHints = e.hints.map((function(t) {
                     return t.defaultMesh
-                })), bf() && (e.altTexture = (new au).load("/SilentFamilyShadow/assets/textures/equirectangular/" + t.alt + ".jpg"), e.altTexture.wrapS = 1e3, e.altTexture.repeat.x = -1), e
+                })), bf() && (e.altTexture = (new au).load("./assets/textures/equirectangular/" + t.alt + ".jpg"), e.altTexture.wrapS = 1e3, e.altTexture.repeat.x = -1), e
             }
             return e = o, (n = [{
                 key: "onLastSouvenirFound",
@@ -26300,7 +26300,7 @@
                 var e = this;
                 return new Promise((function(n) {
                     e.loader.load(function(t) {
-                        return "/SilentFamilyShadow/assets/textures/equirectangular/" + (t.alt && xf() ? t.alt : t.name) + ".jpg"
+                        return "./assets/textures/equirectangular/" + (t.alt && xf() ? t.alt : t.name) + ".jpg"
                     }(t), (function(i) {
                         e.renderer && e.renderer.initTexture(i), e.textures[t.id] = i, n(Object.assign(t, {
                             texture: i
@@ -26740,7 +26740,7 @@
                 type: "texture",
                 id: "torchlightsTexture",
                 url: "textures/torchlight-min.png"
-            }], "/SilentFamilyShadow/assets/").then(this.onLoadComplete))
+            }], "./assets/").then(this.onLoadComplete))
         }
         var e, n, i;
         return e = t, (n = [{
